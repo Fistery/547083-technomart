@@ -3,141 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="/css/style-catalog.css">
 </head>
 <body>
   <header class="main-header">
       <nav class="site-navigation">
-        <a href="index.html" class="link-Technomart1">Техномарт</a>
-        <form class="Search"></form>
+        <a href="index.html" class="navigation-link">Техномарт</a>
+        <form class="header-search"></form>
       </nav>
         <nav class="user-navigation">
-          <ul class="user-navigation-menu">
-            <li "user-navigation-menu-item"><a>Закладки:0</a></li>
-            <li "user-navigation-menu-item"><a>Корзина:10</a></li>
-            <li "user-navigation-menu-item"><a>Оформить заказ</a></li>
+          <ul class="user-navigation-list">
+            <li "user-navigation-item"><a class="navigation-item" href="#">Закладки:0</a></li>
+            <li "user-navigation-item"><a class="navigation-item" href="#">Корзина:10</a></li>
+            <li "user-navigation-item"><a class="navigation-item" href="#">Оформить заказ</a></li>
           </ul>
         </nav>
-    <section class="info">
-        <p>Интернет-магазин строительных материалов
+    <div class="info">
+        <p class="header-text">Интернет-магазин строительных материалов
           и инструментов для ремонта</p>
-      <span class="phone">+7(812)555-05-55</span><br>
-      <span class="address">г. Санкт-Петербург, ул. Конюшенная, д.19/8</span>
-      <p>
-        <a href="#">Войти</a>
-        <a href="#">Регистрация</a>
-      </p>
-    </section>
+      <p class="phone">+7(812)555-05-55</p><br>
+      <p class="address">г. Санкт-Петербург, ул. Конюшенная, д.19/8</p>
+    </div>
+      <div class="">
+        <a href="#" class="modal">Войти</a>
+        <a href="#" class="modal">Регистрация</a>
+      </div>
       <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li class="site-navigation-item"><a href="index.html">Главная</a></li>
-          <li class="site-navigation-item">Компания</li>
-          <li class="site-navigation-item"><a>Каталог</a></li>
-          <li class="site-navigation-item">Новости</li>
-          <li class="site-navigation-item">Спецпредложения</li>
-          <li class="site-navigation-item">Доставка</li>
-          <li class="site-navigation-item">Контакты</li>
+        <ul class="main-navigation-list">
+          <li class="main-navigation-item"><a class="navigation-item" href="index.html">Главная</a></li>
+          <li class="main-navigation-item"><a class="navigation-item" href="#">Компания</a></li>
+          <li class="main-navigation-item"><a class="navigation-item" href="catalog.html">Каталог</a></li>
+          <li class="main-navigation-item"><a class="navigation-item" href="#">Новости</a></li>
+          <li class="main-navigation-item"><a class="navigation-item" href="#">Спецпредложения</a></li>
+          <li class="main-navigation-item"><a class="navigation-item" href="#">Доставка</a></li>
+          <li class="main-navigation-item"><a class="navigation-item" href="#">Контакты</a></li>
         </ul>
       </nav>
       </header>
-      <main class="container"
-      <section class="page-navigation">
+      <main class="container">
+      <div class="page-navigation">
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item"><a href="index.html">
             <img src="#" alt="Главная страница">
           </a></li>
-          <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
-          <li class="breadcrumbs-item"><a href="#">Инструмент</a></li>
-          <li class="breadcrumbs-item-current">Перфораторы</li>
+          <li class="breadcrumbs-item"><a class="breadcrumbs-button" href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs-item"><a class="breadcrumbs-button" href="#">Инструмент</a></li>
+          <li class="breadcrumbs-item-current"><a class="breadcrumbs-button" href="#">Перфораторы</a></li>
         </ul>
-      </section>
-      <section class="filters">
+      </div>
+<!-- оставил вместо section что бы проще было найти -->
+      <form action=""></form>
 
-      </section>
-      <section class="instruments">
-        <h2 class="perforator">Префораторы</h2>
+
+      <section class="catalog-block">
+        <h2 class="second-header">Префораторы</h2>
         <ul class="all-instruments">
-          <li class="all-instruments-item item1">
+          <li class="all-instruments-item">
             <img src="#" alt="Перфоратор BOSCH 3000">
           </li>
-          <li class="all-instruments-item item1">
+          <li class="all-instruments-item">
             <img src="#" alt="Перфоратор BOSCH 6000">
           </li>
-          <li class="all-instruments-item item1">
+          <li class="all-instruments-item">
             <img src="#" alt="Перфоратор BOSCH 2000">
           </li>
-          <li class="all-instruments-item item2">
+          <li class="all-instruments-item">
             <img src="#" alt="Перфоратор BOSCH 3000">
           </li>
-          <li class="all-instruments-item item2">
+          <li class="all-instruments-item">
             <img src="#" alt="Перфоратор BOSCH 6000">
           </li>
-          <li class="all-instruments-item item2">
+          <li class="all-instruments-item">
             <img src="#" alt="Перфоратор BOSCH 2000">
           </li>
-          <li class="all-instruments-item item3">
+          <li class="all-instruments-item">
             <img src="#" alt="Перфоратор BOSCH 3000">
           </li>
-          <li class="all-instruments-item item3">
+          <li class="all-instruments-item">
             <img src="#" alt="Перфоратор BOSCH 6000">
           </li>
-          <li class="all-instruments-item item3">
+          <li class="all-instruments-item">
             <img src="#" alt="Перфоратор BOSCH 2000">
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current">1</li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">Следующая</a></li>
+          <li class="pagination-item pagination-item-current"><a class="paginetion-address"  href="#">1</li>
+          <li class="pagination-item"><a class="paginetion-address"  href="#">2</a></li>
+          <li class="pagination-item"><a class="paginetion-address"  href="#">3</a></li>
+          <li class="pagination-item"><a class="paginetion-address"  href="#">Следующая</a></li>
         </ul>
       </section>
       <section class="instrument-info">
-        <h2>Пара слов о перфораторах</h2>
+        <h2 class="instrument-head-text">Пара слов о перфораторах</h2>
           <p class="instrument-text">Префоратор - универсальный инструмент. Предназначен для сверления
              и долбления отверстий в кирпече, бетоне, камне.<br>
            Существуют электромеханические и пнеаматические перфораторы.
-         Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br>
+         Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
        ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены
      отбойный молоток и ударная дрель.</p>
       </section>
     </main>
     <footer class="page-footer">
-      <a class="link-technomart2">Техномарт</a>
-      <p class="Footer-info">
+      <a class="footer-technomart">Техномарт</a>
+      <p class="footer-info">
         г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         +7(812)555-05-55
       </p>
-      <nav class="Footer-navigation">
-        <ul class="footer-navigation-menu">
-          <li class="footer-navigation-items-white">Компания</li>
-          <li class="footer-navigation-items-white">Новости</li>
-          <li class="footer-navigation-items-white">Каталог</li>
-          <li class="footer-navigation-items-white">Доставка</li>
-          <li class="footer-navigation-items-white"> Контакты</li>
-          <li class="footer-navigation-items gold">Материалы</li>
-          <li class="footer-navigation-items gold">Техника</li>
-          <li class="footer-navigation-items gold">Инструмент</li>
-          <li class="footer-navigation-items gold">Спецпредложения</li>
+      <nav class="footer-navigation">
+        <ul class="footer-navigation-list">
+          <li class="footer-navigation-items"><a class="footer-navigation-button">Компания</a></li>
+          <li class="footer-navigation-items"><a class="footer-navigation-button">Новости</a></li>
+          <li class="footer-navigation-items"><a class="footer-navigation-button">Каталог</a></li>
+          <li class="footer-navigation-items"><a class="footer-navigation-button">Доставка</a></li>
+          <li class="footer-navigation-items"><a class="footer-navigation-button"> Контакты</a></li>
+          <li class="footer-navigation-items gold"><a class="footer-navigation-button">Материалы</a></li>
+          <li class="footer-navigation-items gold"><a class="footer-navigation-button">Техника</a></li>
+          <li class="footer-navigation-items gold"><a class="footer-navigation-button">Инструмент</a></li>
+          <li class="footer-navigation-items gold"><a class="footer-navigation-button">Спецпредложения</a></li>
         </ul>
         </nav>
-        <section class="copyright">
+        <section class="footer-copyright-list">
         <p class="copyright-info">
-           ©2010-2017 Компания "техномарт"<br>
+           ©2010-2017 Компания "техномарт"
            +7(812)555-05-55
         </p>
         <p class="footer-copyright">
-           Разработано -<br>
+           Разработано -
           <a class="academy gold">htmlacademy.ru</a>
         </p>
-        <p class="Feedback">
-          <span>Обратная связь</span><br>
-          <span class="Feedback gold">mail@htmlacademy.ru</span>
+        <p class="feedback">
+          Обратная связь
+          <span class="feedback gold">mail@htmlacademy.ru</span>
         </p>
         </section>
         <ul class="social">
-          <li class="social-item"><a class="social-button" href="#">Вконтакте</a></li>
-          <li class="social-item"><a class="social-button" href="#">Фейсбук</a></li>
-          <li class="social-item"><a class="social-button" href="#">Инстаграм</a></li>
+          <li class="social-link"><a class="social-button" href="#">Вконтакте</a></li>
+          <li class="social-link"><a class="social-button" href="#">Фейсбук</a></li>
+          <li class="social-link"><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
     </footer>
 </body>
