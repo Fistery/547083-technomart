@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -14,7 +13,7 @@
       <ul class="user-navigation-list">
         <li class="user-navigation-item">
           <a class="user-navigation-button" href="#">
-            Закладки
+            Закладки:0
           </a>
         </li>
         <li class="user-navigation-item">
@@ -28,12 +27,13 @@
           </a>
         </li>
       </ul>
-      <p class="header-info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <p class="header-info">Интернет-магазин строительных материалов и
+        инструментов для ремонта</p>
       <div class="header-contacts-block">
-        <p class="header-contacts-number">+7(812)555-05-55</p><br>
-        <p class="header-contacts-info">г. Санкт-Петербург, ул.Б. Конюшенная, дю 19/8</p>
+        <p class="header-contacts-number">+7(812)555-05-55</p>
+        <p class="header-contacts-info">г. Санкт-Петербург, ул.Б. Конюшенная, д. 19/8</p>
       </div>
-      <div class="user-modal">
+      <div class="user-modal-head">
       <ul class="user-modal-list">
         <li class="user-modal-button">
           <a class="modal-button" href="#">
@@ -46,7 +46,7 @@
           </a>
         </li>
       </ul>
-    </div>
+      </div>
     <nav class="header-main-menu">
       <ul class="header-main-menu-list">
         <li class="header-main-menu-item">
@@ -87,49 +87,49 @@
       </ul>
     </nav>
     </header>
-    <main class="container">
+    <main class="info-container">
       <section class="site-services">
         <ul class="site-services-list">
           <li class="site-services-item">
-              <p>Материалы</p>
+              <p class="site-services-text">Материалы</p>
               <a class="site-services-item-button" href="#">
                 на любой вкус
               </a>
             </a>
           </li>
           <li class="site-services-item">
-              <p>Инструмент</p>
+              <p class="site-services-text">Инструмент</p>
               <a class="site-services-item-button" href="#">
                 на все случаи
             </a>
           </li>
           <li class="site-services-item">
-              <p>Техника </p>
+              <p class="site-services-text">Техника </p>
               <a class="site-services-item-button" href="#">
                 для стройки
             </a>
           </li>
           <li class="site-services-item">
-              <p>Скидки</p>
+              <p class="site-services-text">Скидки</p>
               <a class="site-services-item-button" href="#">
                 50% на 350 товаров
             </a>
           </li>
           <li class="site-services-item">
-              <p>Доставка</p>
+              <p class="site-services-text">Доставка</p>
               <a class="site-services-item-button" href="#">
                 бесплатно
             </a>
           </li>
         </ul>
         <figure class="main-slider">
-          <div class="main-slider-icon">
-            <img src="#" alt="man-toys">
+          <div class="main-slider-work">
+            <img src="#" alt="Настоящие мужские игрушки">
             <p class="main-slider-bold-text">Перфораторы</p>
             <p class="main-slider-text">Настоящие мужские игрушки</p>
           </div>
-          <div class="main-slider-icon">
-            <img src="#" alt="">
+          <div class="main-slider-hard-work">
+            <img src="#" alt="Соседям на радость">
             <p class="main-slider-bold-text">Дрели</p>
             <p class="main-slider-text">Соседям на радость!</p>
           </div>
@@ -145,23 +145,55 @@
             <p class="item-block-text">Перфоратор Bosch Bfg 9000</p>
             <p class="item-block-price-grey">32500 Р.</p>
             <p class="item-block-price"> 25500 Р.</p>
+            <div class="item-price-buy">
+              <a class="item-price-buy-button-green">
+                Купить
+              </a>
+              <a class="item-price-buy-button">
+                В закладки
+              </a>
+            </div>
           </li>
           <li class="item-block-id">
             <img src="#" alt="Перфоратор Bosch Bfg 3000">
             <p class="item-block-text">Перфоратор Bosch Bfg 3000</p>
             <p class="item-block-price-grey">22500 Р.</p>
             <p class="item-block-price"> 15500 Р.</p>
+            <div class="item-price-buy">
+              <a class="item-price-buy-button-green">
+                Купить
+              </a>
+              <a class="item-price-buy-button">
+                В закладки
+              </a>
+            </div>
           </li>
           <li class="item-block-id">
             <img src="#" alt="Перфоратор Bosch Bfg 6000">
             <p class="item-block-text">Перфоратор Bosch Bfg 6000</p>
             <p class="item-block-price-grey">30500 Р.</p>
             <p class="item-block-price"> 25500 Р.</p>
+            <div class="item-price-buy">
+              <a class="item-price-buy-button-green">
+                Купить
+              </a>
+              <a class="item-price-buy-button">
+                В закладки
+              </a>
+            </div>
           </li>
           <li class="item-block-id">
             <img src="#" alt="Перфоратор Bosch Bfg 2000">
             <p class="item-block-text">Перфоратор Bosch Bfg 2000</p>
             <p class="item-block-price">12500 Р.</p>
+            <div class="item-price-buy">
+              <a class="item-price-buy-button-green">
+              Купить
+            </a>
+            <a class="item-price-buy-button">
+              В закладки
+            </a>
+            </div>
           </li>
         </ul>
       </div>
@@ -217,19 +249,16 @@
         Мы стараемся изо всех сил, что бы сделать ваши покупки приятными.</p>
         <figure class="services-slider">
           <div class="services-slide-car">
-            <button type="button" name="button">Доставка</button>
+            <a>Доставка</a>
             <h2 class="services-bold-text">Доставка</h2>
-            <img src="#" alt="Сервис меню">
-            <img src="#" alt="Доставка">
             <p class="services-text">Мы с удовольствием доставим ваш товар прямо<br>
                к вашему подъезду совершенно бесплатно!<br>
                ведь мы неплохо заработаем,<br>
                поднимая его на ваш этаж!</p>
           </div>
           <div class="services-slide-guarantee">
+            <a>Гарантия</a>
             <h2 class="services-bold-text">Гарантия</h2>
-            <img src="#" alt="Сервис меню">
-            <img src="#" alt="Гарантия 100%">
             <p class="services-text">Если купленный у нас товар поломается или заискрит,<br>
               а также в случае пожара, спровоцированного его возгоранием,<br>
               вы всегда сможете быть уверенны в нашей гарантии. Мы обменяем<br>
@@ -237,18 +266,14 @@
               Дом уж восстановите как-нибудь сами.</p>
           </div>
           <div class="services-slide-credit">
+            <a>Кредит</a>
             <h2 class="services-bold-text">Кредит</h2>
-            <img src="#" alt="Сервис меню">
-            <img src="#" alt="Кредитная форма">
             <p class="services-text">
               Залезть в долговую яму стало проще!<br>
               кредитные специалисты придут вам на помощь</p>
               <a class="credit-button" href="#">Отправить заявку</a>
           </div>
         </figure>
-        <div class="credit-form">
-          <p>Ваше имя</p>
-        </div>
       </section>
       <section class="company-info-block">
         <h2 class="company-info-bold-text">Компания "Техномарт"</h2>
@@ -283,47 +308,47 @@
       <nav class="footer-navigation">
         <ul class="footer-navigation-list">
           <li class="footer-navigation-list-item">
-            <a href="#">
+            <a class="footer-navigation-button" href="#">
               Компания
             </a>
           </li>
           <li class="footer-navigation-list-item">
-            <a href="#">
+            <a class="footer-navigation-button" href="#">
               Новости
             </a>
           </li>
           <li class="footer-navigation-lis-itemt">
-            <a href="#">
+            <a class="footer-navigation-button" href="#">
               Каталог
             </a>
           </li>
           <li class="footer-navigation-list-item">
-            <a href="#">
+            <a class="footer-navigation-button" href="#">
               Доставка
             </a>
           </li>
           <li class="footer-navigation-list-item">
-            <a href="#">
+            <a class="footer-navigation-button" href="#">
               Контакты
             </a>
           </li>
-          <li class="footer-navigation-list-item gold">
-            <a href="#">
+          <li class="footer-navigation-list-item gold-text">
+            <a class="footer-navigation-button" href="#">
               Материалы
             </a>
           </li>
-          <li class="footer-navigation-list-item gold">
-            <a href="#">
+          <li class="footer-navigation-list-item gold-text">
+            <a class="footer-navigation-button" href="#">
               Техника
             </a>
           </li>
-          <li class="footer-navigation-list-item gold">
-            <a href="#">
+          <li class="footer-navigation-list-item gold-text">
+            <a class="footer-navigation-button" href="#">
               Инструмент
             </a>
           </li>
-          <li class="footer-navigation-list-item gold">
-            <a href="#">
+          <li class="footer-navigation-list-item gold-text">
+            <a class="footer-navigation-button" href="#">
               Спецпредложения
             </a>
           </li>
@@ -336,12 +361,12 @@
         Все права защищены
       </p>
       <p class="footer-feedback">
-        Обратная связь:<br>
-        <span class="gold"></span>
+        Обратная связь:
+        <span class="gold-text">mail@htmlacademy.ru</span>
       </p>
       <p class="page-developer">
         Разработано -
-        <span class="gold">htmlacademy.ru</span>
+        <span class="gold-text">htmlacademy.ru</span>
       </p>
       <ul class="social">
         <li class="social-link">
@@ -351,9 +376,9 @@
         </li>
         <li class="social-link">
           <a class="social-button" href="#">
-            Фейсбук</
-            a></
-            li>
+            Фейсбук
+            </a>
+            </li>
         <li class="social-link">
           <a class="social-button" href="#">
             Инстаграм
@@ -362,23 +387,22 @@
       </ul>
     </section>
     </footer>
-    <section class="modal-page">
-      <h3 class="modal-page-bold-text">Ваше имя</h3>
-      <p>Имя Фамилия</p>
+    <section class="modal-page-map">
+      <h3 class="modal-page-bold-text">Ваше имя:</h3>
+      <p class="modal-grey-text">Имя Фамилия</p>
       <!-- Здесь будет форма -->
-      <h3 class
-      ="modal-page-bold-text">Ваш e-mail</h3>
-      <p>Email@example.com</p>
+      <h3 class="modal-page-bold-text">Ваш e-mail:</h3>
+      <p class="modal-grey-text">Email@example.com</p>
       <!-- Здесь будет форма -->
-      <h3 class="modal-page-bold-text">
-        Текст письма</h3>
-      <p>В свободной форме class="modal-bold-text"</p>
+      <h3 class="modal-page-bold-text">Текст письма:</h3>
+      <p class="modal-grey-text">В свободной форме</p>
       <!-- Здесь будет форма -->
       <span class="modal-close">x</span>
       <a class="modal-page-button" href="#">Отправить</a>
     </section>
     <section class="modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
+      <!-- Здесь будет форма -->
       <span class="modal-close">x</span>
     </section>
   </body>
