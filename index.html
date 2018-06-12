@@ -6,13 +6,15 @@
   </head>
   <body>
     <header class="page-header">
+    <div class="logo-block">
       <h2 class="header-text-logo"><a class="header-text-logo-button" href="#">Техномарт</a></h2>
       <!-- SEARCH -->
       <form class="main-search" action="#">
         <label>
-        <input type="search" name="main-search">
+        <input type="search" name="main-search" placeholder="Поиск:">
         </label>
       </form>
+    </div>
       <!-- USER NAVIGATION -->
       <nav class="user-navigation">
       <ul class="user-navigation-list">
@@ -22,7 +24,7 @@
         <li class="user-navigation-item">
           <a class="user-navigation-button" href="#">Корзина:0</a>
         </li>
-        <li class="user-navigation-item">
+        <li class="user-navigation-item green-back">
           <a class="user-navigation-button" href="#">Оформить заказ</a>
         </li>
       </ul>
@@ -71,7 +73,6 @@
       <h1 class="visualli-hidden">Строительный онлайн-магазин</h1>
     <!-- SERVICES SHOP -->
     <section class="site-services">
-        <section class="site-services-stroke">
           <div class="site-services-item orange-back">
               <p class="site-services-text">Материалы</p>
               <a class="site-services-item-button" href="#">на любой вкус</a>
@@ -84,7 +85,7 @@
               <p class="site-services-text">Техника </p>
               <a class="site-services-item-button" href="#">для стройки</a>
           </div>
-        </section>
+        <div class="site-services-slaid">
         <figure class="main-slider">
           <div class="main-slider-work-one">
             <img src="#" alt="Настоящие мужские игрушки">
@@ -108,6 +109,7 @@
               <a class="site-services-item-button" href="#">бесплатно</a>
           </div>
        </div>
+     </div>
     </section>
     <!-- POPULAR ITEM -->
     <section class="main-price-block">
@@ -163,6 +165,7 @@
             <h2 class="bold-brands-text">Популярные производители:</h2>
             <a class="all-brands-button" href="#">Все производители</a>
         </div>
+        <div class="item-block">
           <div class="brands-block-item">
             <a class="brands-block-item" href="#"><img src="#" alt="BOSCH">Производитель инструмента BOSCH</a>
           </div>
@@ -187,20 +190,23 @@
           <div class="brands-block-item">
             <a class="brands-block-item" href="#"><img src="#" alt="Metabo work. don't play">Производитель инструмента Metabo</a>
           </div>
+        </div>
       </div>
       <!-- SERVICES BLOCK -->
       <section class="services-block">
-        <h2 class="services-block-text-bold">Сервисы</h2>
-        <p class="services-block-text">Хороший интернет-магазин отличается от плохого не только ценами!
-        Мы стараемся изо всех сил, что бы сделать ваши покупки приятными.</p>
+        <div class="srvices-text-area">
+          <h2 class="services-block-text-bold">Сервисы</h2>
+          <p class="services-block-text">Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, что бы сделать ваши покупки приятными.</p>
+        </div>
         <!-- SERVICES SLIDER -->
         <figure class="services-slider">
-          <div class="">
+          <div class="srvices-link">
             <a class="delivery-button" href="#">Доставка</a>
             <a class="guarantee-button" href="#" >Гарантия</a>
             <a class="credit-button" href="#">Кредит</a>
           </div>
-          <div class="services-slide-car">
+          <div class="services-slide services-car">
             <h2 class="services-bold-text">Доставка</h2>
             <p class="services-text">
               Мы с удовольствием доставим ваш товар прямо
@@ -208,7 +214,7 @@
                ведь мы неплохо заработаем,<br>
                поднимая его на ваш этаж!</p>
           </div>
-          <div class="services-slide-guarantee">
+          <div class="services-slide servise-guarantee">
             <h2 class="services-bold-text">Гарантия</h2>
             <p class="services-text">
               Если купленный у нас товар поломается или заискрит,<br>
@@ -217,7 +223,7 @@
               сгоревший товар на новый.<br>
               Дом уж восстановите как-нибудь сами.</p>
           </div>
-          <div class="services-slide-credit">
+          <div class="services-slide services-credit">
               <h2 class="services-bold-text">Кредит</h2>
               <p class="services-text">
               Залезть в долговую яму стало проще!<br>
@@ -227,32 +233,33 @@
         </figure>
       </section>
       <section class="company-info-block">
-        <h2 class="company-info-bold-text">Компания "Техномарт"</h2>
-        <p class="company-info-text">
-          Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и
-        строительства не оставит равнодушными любителей сэкономить на гатарбайтерах.</p>
-        <p class="company-info-text">
-          Мы можем доставить ваш товар в самые отдаленные точки России!
-          Техномарт работает со многими компаниями:</p>
+        <div class="company-text-block">
+          <h2 class="company-info-bold-text">Компания "Техномарт"</h2>
+          <p class="company-info-text">
+            Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и
+            строительства не оставит равнодушными любителей сэкономить на гатарбайтерах.</p>
+          <p class="company-info-text">
+            Мы можем доставить ваш товар в самые отдаленные точки России!
+            Техномарт работает со многими компаниями:</p>
           <ul class="company-info-list">
             <li class="company-info-list-item">Деловые линии</li>
             <li class="company-info-list-item">Автотрейдинг</li>
             <li class="company-info-list-item">ЖелДорЭкспедиция</li>
           </ul>
             <a class="about-company-info" href="#">Подробнее о компании</a>
-      </section>
-      <section class="company-map-info">
-        <h2 class="company-info-bold-text">Контакты</h2>
-        <p class="company-info-text">Вы можете забрать товар сами, заехав в наш офис:</p>
-        <a class="map-button" href="#"><img src="#" alt="Мы на карте"></a>
-        <a class=" map-button-info" href="#">Заблудились? Напишите нам!<a>
+        </div>
+        <div class="company-map-info">
+          <h2 class="company-info-bold-text">Контакты</h2>
+          <p class="company-info-text">Вы можете забрать товар сами, заехав в наш офис:</p>
+          <a class="map-button" href="#"><img src="#" alt="Мы на карте"></a>
+          <a class=" map-button-info" href="#">Заблудились? Напишите нам!<a>
+        </div>
       </section>
     </main>
     <!-- FOOTER -->
     <footer class="page-footer">
-      <section class="main-footer-navigation">
       <nav class="footer-navigation">
-        <h2 class="header-text-logo"><a class="header-text-logo-button" href="#">Техномарт</a></h2>
+        <h2 class="header-text-logo"><a class="header-text-logo-button">Техномарт</a></h2>
         <ul class="footer-navigation-list">
           <li class="footer-navigation-list-item">
             <a class="footer-navigation-link" href="#">Компания</a>
@@ -271,13 +278,11 @@
           </li>
         </ul>
       </nav>
-    </section>
     <section class="main-footer-info-block">
       <div class="footer-info">
         <p class="footer-info-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <span class="contacts-footer-number">+7(812)555-05-55</span>
       </div>
-      <section class="main-footer-navigation-gold-text">
       <nav class="footer-navigation-gold-text">
         <ul>
           <li class="footer-navigation-list-item gold-text">
@@ -294,7 +299,6 @@
           </li>
         </ul>
       </nav>
-      </section>
     </section>
       <!-- COPYRIGHT BLOCK -->
     <section class="page-copyright">
@@ -304,6 +308,7 @@
         Все права защищены
       </p>
     </div>
+    <nav class="social-navigation">
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link social-link-vk" href="#">Вконтакте</a>
@@ -315,16 +320,21 @@
           <a class="social-link social-link-insta" href="#">Инстаграм</a>
         </li>
       </ul>
+    </nav>
+    <div class="feedback-block">
       <p class="footer-feedback">
         Обратная связь:
         <span class="gold-text">mail@htmlacademy.ru</span>
       </p>
+    </div>
+    <div class="developer-block">
       <p class="page-developer">
         Разработано -
         <span class="gold-text">
           <a class="intensive-button" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </span>
       </p>
+    </div>
     </section>
     </footer>
     <section class="modal-page-map">
