@@ -36,8 +36,8 @@ header{
 
 div.logo-block{
   background-color: #293449;
-  width: 1200px;
-  height: 42px;
+  /* width: 1200px;
+  height: 42px; */
 }
 
 h2.header-text-logo{
@@ -51,6 +51,10 @@ h2.header-text-logo{
   border-bottom: 5px solid #b52933;
   width: 220px;
   height: 42px;
+}
+
+a.header-text-logo-button{
+  color: #ffffff;
 }
 
 h2.header-text-logo:hover{
@@ -156,50 +160,31 @@ a.site-services-item-button{
   font-size: 14px;
   line-height: 18px;
   border-radius: 2px;
+  background-color: rgb(229, 229, 229, 50%)
 }
 
 a.site-services-item-button:hover{
-  background-color: #c58e24;
+  background-color: rgb(204, 204, 204, 50%);
 }
 
 div.orange-back{
   background-color: #ffbf47;
 }
 
-div.orange-back a{
-  background-color: #e5ac40;
-}
-
 div.blue-back{
   background-color: #3bbce3;
-}
-
-div.blue-back a{
-  background-color: #35a9cc;
 }
 
 div.purple-back{
   background-color: #dc91d8;
 }
 
-div.purple-back a{
-  background-color: #c682c2;
-}
-
 div.green-back{
   background-color: #8ed78f;
 }
 
-div.green-back a{
-  background-color: #80c180;
-}
-
 div.light-orange-back{
   background-color: #ffc047;
-}
-
-div.light-orange-back a{
-  background-color: #e5ac40;
 }
 
 div.main-slider-work{
@@ -343,6 +328,10 @@ div.brands-block-item{
   border: 1px solid #eaeaea;
 }
 
+section.services-block{
+  background-color: #f4f8f9;
+}
+
 h2.services-block-text-bold{
   font-size: 30px;
   line-height: 30px;
@@ -366,8 +355,13 @@ a.services-button{
   border: 1px solid #ffffff;
 }
 
-a.services-button:click{
+a.services-button:hover{
+  background-color: #293449;
+}
 
+a.services-button:active{
+  background-color: #ffffff;
+  color: #32425c;
 }
 
 h2.services-bold-text{
@@ -519,3 +513,83 @@ a.social-link:hover{
 }
 
 /* catalog */
+
+a.red-back{
+  background-color: #ee3643;
+}
+
+p.user-name{
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+  width: 299px;
+}
+
+a.modal-button-text-underlog{
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+  color: #32425c;
+}
+
+a.modal-button-text-underlog:hover{
+  color: #ee3643;
+}
+
+a.breadcrumbs-list-button{
+  font-family: "PT Sans";
+  font-style: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+h2.catalog-text-bold{
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+.grey-back{
+  background-color: #f7f3ec;
+}
+
+p.filter-text{
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.underline-text{
+  color: #c5c5c5;
+  border-bottom: 1px dotted #ee3643 ;
+}
+
+.underline-text:hover{
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.underline-text:active{
+  color: #ee3643;
+  border-bottom: none;
+}
+
+a.pagination-item-link{
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  border: 1px solid #e5e5e5;
+}
+
+a.pagination-item-link:hover{
+  border: 1px solid #bdc6ca;
+}
+
+a.pagination-item-link:active{
+  background-color: #ee3643;
+  color: #ffffff;
+  border: none;
+}
