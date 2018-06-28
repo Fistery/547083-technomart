@@ -1,7 +1,7 @@
 /* ну и почему мы не пулимся-то?? */
 
 body{
-    margin: 0;
+    margin: auto;
     padding: 0;
 
     font-family: "Cuprum", Arial, sans-serif;
@@ -9,7 +9,7 @@ body{
     line-height: 24px;
     color: #000000;
     text-transform: none;
-    width: 1200px;
+    width: 100%;
 
     background-color: #ffffff;
     background-position: top center;
@@ -38,19 +38,27 @@ ul{
   list-style-type: none;
 }
 
-.img{
+img{
   max-width: 100%;
   height: auto;
+}
+
+.margin-cont{
+  width: 940px;
+  margin: auto;
 }
 
 .page-header{
   background-color: #f3f7f8;
 }
 
+.user-nav-back{
+  background-color: #293449;
+  width: 100%;
+}
+
 .user-navigation{
   background-color: #293449;
-  padding-left: 130px;
-  padding-right: 130px;
   width: 940px;
   height: 41px;
 
@@ -516,6 +524,7 @@ ul{
   justify-content: space-between;
   align-items: center;
   width: 940px;
+  margin-bottom: 20px;
   background-color: #faf7f3;
 }
 
@@ -991,14 +1000,14 @@ ul{
   opacity: 0.3;
 }
 
+.copyright-back{
+  background-color: #293449;
+}
+
 .page-copyright{
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  background-color: #293449;
-
-  padding-left: 130px;
-  padding-right: 130px;
 
   display: flex;
   justify-content: space-between;
