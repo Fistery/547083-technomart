@@ -200,11 +200,6 @@ img{
   opacity: 0.7;
 }
 
-.marg-contaner{
-  padding-left: 130px;
-  padding-right: 130px;
-}
-
 .page-header-info-block{
   max-width: 940px;
   min-height: 160px;
@@ -295,8 +290,6 @@ img{
 .header-main-menu{
   max-width: 940px;
 
-  margin-bottom: 60px;
-
   display: flex;
   justify-content: center;
 }
@@ -333,6 +326,8 @@ img{
 }
 
 .site-services{
+  margin-top: 40px;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -369,7 +364,7 @@ img{
   text-align: center;
   border-radius: 2px;
   color: #ffffff;
-  background-color: rgba(178, 178, 178, 0.5);
+  background-color: rgba(229, 229, 229, 0.5);
 
   padding: 10px;
   width: 110px;
@@ -377,14 +372,14 @@ img{
 }
 
 .site-services-item-button:hover{
-  background-color: rgba(178, 178, 178, 0.7);
+  background-color: rgba(204, 204, 204, 0.5);
 }
 
 .site-services-item-button:active{
-  background-color: rgba(178, 178, 178, 0.9);
+  background-color: rgba(178, 178, 178, 0.5);
 }
 
-.material-icon::before{
+.additional-image::before{
   position:absolute;
   content: url("../img/new-flag.png");
   top: 0px;
@@ -458,7 +453,6 @@ img{
 .one-slide{
   background-image: url(../img/slider-1.jpg);
   background-repeat: no-repeat;
-    /* display: none; */
 }
 
 .two-slide{
@@ -625,12 +619,12 @@ img{
 }
 
 .price-block-element{
+  position: relative;
   border: 1px solid #eaeaea;
   width: 220px;
   height: 318px;
 
   box-sizing: border-box;
-  /* padding: 20px; */
 
 }
 
@@ -642,12 +636,6 @@ img{
   left: 42px;
   display: none;
 }
-
-/* .puncher-text{
-  box-sizing: border-box;
-  padding: 30px;
-
-} */
 
 .price-block-text{
   font-family: "PT Sans", Arial, sans-serif;
@@ -776,7 +764,7 @@ img{
 
 .services-button::after{
   position: absolute;
-  content: url("../img/layer118.svg");
+  content: url(../img/layer118.svg);
   right: 0px;
   top: -40px;
 
@@ -869,6 +857,8 @@ img{
 }
 
 .company-info-block{
+  margin-top: 80px;
+
   display: flex;
   justify-content: space-between;
   padding-bottom: 85px;
@@ -879,6 +869,8 @@ img{
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+
+  margin: 0px;
 }
 
 .company-info-text{
@@ -1065,9 +1057,6 @@ img{
   background-position: center;
 }
 
-/* social block */
-
-
 /* catalog */
 
 .red-back{
@@ -1122,18 +1111,44 @@ img{
   opacity: 0.3;
 }
 
+.breadcrumbs-list{
+  display: flex;
+  align-items: center;
+
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
 .breadcrumbs-list-button{
+  position: relative;
   font-family: "PT Sans", Arial, sans-serif;
   font-style: 13px;
   line-height: 18px;
   color: #000000;
+
+  padding-right: 15px;
+
+  margin: 0px;
+}
+
+.icon-right{
+  padding-left: 25px;
+}
+
+.icon-right::before{
+  position: absolute;
+  content: url(../img/icon-right-small.png);
+  top: 2px;
+  left: 0px;
 }
 
 .img-link:before{
   content: url("../img/icon-home.svg")
 }
 
-.info-block-catalog{
+.info-catalog-back{
   background-color: #f2f6f8;
 }
 
@@ -1145,6 +1160,10 @@ img{
 
 .catalog-block{
     background-color: #f2f6f8;
+    padding: 25px 30px;
+    box-sizing: border-box;
+
+    margin-bottom: 20px;
 }
 
 .grey-back{
@@ -1267,10 +1286,6 @@ img{
   display: flex;
 }
 
-.breadcrumbs-list{
-  display: flex;
-}
-
 .catalog-flex-block{
   display: flex;
 }
@@ -1311,6 +1326,11 @@ img{
 
 .filters-block-right{
   margin-left: auto;
+}
+
+.check-box-filters{
+  display: flex;
+  flex-direction: column;
 }
 
 .price-item-catalog{

@@ -10,16 +10,16 @@
   </head>
   <body>
     <header class="page-header">
-    <div class="logo-block">
-      <h2 class="header-text-logo"><a class="header-text-logo-button" href="#">Техномарт</a></h2>
-      <!-- SEARCH -->
+      <div class="user-nav-back">
+      <div class="margin-cont">
+      <nav class="user-navigation">
+      <h2 class="header-text-logo"><a class="header-text-logo-button" href="index.html">Техномарт</a></h2>
       <form class="main-search" action="#">
         <label class="label-main-search" for="main-search">
         <input type="search" name="main-search" id="main-search" placeholder="Поиск:">
         </label>
       </form>
       <!-- USER NAVIGATION -->
-      <nav class="user-navigation">
       <ul class="user-navigation-list">
         <li class="user-navigation-item">
           <a class="user-navigation-button bookmark-icon" href="#">Закладки:0</a>
@@ -32,10 +32,12 @@
         </li>
       </ul>
     </nav>
-    </div>
+  </div>
+</div>
     <!-- INFO BLOCK -->
+    <div class="margin-cont">
       <div class="page-header-info-block">
-      <p class="header-info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <p class="header-info">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
       <div class="header-contacts-block">
         <p class="header-contacts-number">+7(812)555-05-55</p>
         <p class="header-contacts-info">г. Санкт-Петербург, ул.Б. Конюшенная, д. 19/8</p>
@@ -57,45 +59,46 @@
     <nav class="header-main-menu">
       <ul class="header-main-menu-list">
         <li class="header-main-menu-item">
-          <a class="header-main-menu-button" href="index.html">Главная</a>
+          <a class="header-main-menu-button"><span class="opacity-text-nav">Главная</span></a>
         </li>
         <li class="header-main-menu-item">
-          <a class="header-main-menu-button" href="#">Компания</a>
+          <a class="header-main-menu-button" href="#"><span class="opacity-text-nav">Компания</span></a>
         </li>
         <li class="header-main-menu-item">
-          <a class="header-main-menu-button">Каталог</a>
+          <a class="header-main-menu-button" href="catalog.html"><span class="opacity-text-nav">Каталог</span></a>
         </li>
         <li class="header-main-menu-item">
-          <a class="header-main-menu-button" href="#">Новости</a>
+          <a class="header-main-menu-button" href="#"><span class="opacity-text-nav">Новости</span></a>
         </li>
         <li class="header-main-menu-item">
-          <a class="header-main-menu-button" href="#">Спецпредложения</a>
+          <a class="header-main-menu-button" href="#"><span class="opacity-text-nav">Спецпредложения</span></a>
         </li>
         <li class="header-main-menu-item">
-          <a class="header-main-menu-button" href="#">Доставка</a>
+          <a class="header-main-menu-button" href="#"><span class="opacity-text-nav">Доставка</span></a>
         </li>
         <li class="header-main-menu-item">
-          <a class="header-main-menu-button" href="#">Контакты</a>
+          <a class="header-main-menu-button" href="#"><span class="opacity-text-nav">Контакты</span></a>
         </li>
       </ul>
     </nav>
+    </div>
     </header>
     <main class="info-container-catalog">
       <h1 class="visualli-hidden">Каталог товаров нашего магазина</h1>
     <nav class="breadcrumbs-site-navigation">
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-list-item">
-            <a class="breadcrumbs-list-button img-link" href="index.html"><span class="isualli-hidden">Главная</span>
+            <a class="breadcrumbs-list-button img-link" href="index.html"><span class="visualli-hidden">Главная</span>
             </a>
           </li>
           <li class="breadcrumbs-list-item">
-            <a class="breadcrumbs-list-button" href="#">Каталог</a>
+            <a class="breadcrumbs-list-button icon-right" href="#">Каталог</a>
           </li>
           <li class="breadcrumbs-list-item">
-            <a class="breadcrumbs-list-button" href="#">Инструмент</a>
+            <a class="breadcrumbs-list-button icon-right" href="#">Инструмент</a>
           </li>
           <li class="breadcrumbs-list-item">
-            <a class="breadcrumbs-list-button" href="#">Перфораторы</a>
+            <a class="breadcrumbs-list-button icon-right" href="#">Перфораторы</a>
           </li>
         </ul>
     </nav>
@@ -108,22 +111,28 @@
        <div class="filters-block grey-back">
         <p class="filter-text">Фильтр:</p>
        </div>
-       <form class="grey-back" action="#">
+       <form action="#">
+         <div>
         <p class="bold-name-form">Цена:</p>
           <input type="range" min="0" max="30000" name="price-range" step="1">
-          <span class="grey-back">0</span> - <span class="grey-back">30000</span>
+        </div>
+        <span class="grey-back">0</span> - <span class="grey-back">30000</span>
               <hr class="grey-line">
           <p class="bold-name-form">Производители:</p>
+            <div class="check-box-filters">
             <input type="checkbox" name="BOSCH" checked>BOSCH
             <input type="checkbox" name="Interskol">Интерскол
             <input type="checkbox" name="Makita" checked>Makita
             <input type="checkbox" name="Dewalt">DeWALT
             <input type="checkbox" name="Hitachi">Hitachi
+          </div>
               <hr class="grey-line">
           <p class="bold-name-form">Питание:</p>
+        <div>
             <input type="radio" name="power" checked>Аккумуляторные
             <input type="radio" name="power">Сетевые
          <button class="button-form" type="button" name="button">Показать</button>
+       </div>
         </form>
     </div>
     <div class="price-item-catalog">
@@ -244,94 +253,92 @@
           </li>
         </ul>
     </nav>
+    <div class="info-catalog-back">
+     <div class="margin-cont">
       <div class="info-block-catalog">
         <p class="catalog-text-bold">Пара слов о перфораторах</p>
         <p class="services-text catalog_text">Перфоратор - универсальный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камнею<br>
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br>
           ассортиментом ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </div>
+    </div>
+  </div>
     </main>
     <footer class="page-footer">
       <div class="footer-contaner">
+      <div class="margin-cont">
       <nav class="footer-navigation">
-        <h2 class="header-text-logo footer-logo"><a class="header-text-logo-button">Техномарт</a></h2>
+        <h2 class="header-text-logo footer-logo"><a class="header-text-logo-button">Техномарт</span></a></h2>
         <ul class="footer-navigation-list">
           <li class="footer-navigation-list-item">
-            <a class="footer-navigation-link" href="#">Компания</a>
+            <a class="footer-navigation-link" href="#"><span class="opacity-text-nav">Компания</span></a>
           </li>
           <li class="footer-navigation-list-item">
-            <a class="footer-navigation-link" href="#">Новости</a>
+            <a class="footer-navigation-link" href="#"><span class="opacity-text-nav">Новости</span></a>
           </li>
           <li class="footer-navigation-list-itemt">
-            <a class="footer-navigation-link" href="#">Каталог</a>
+            <a class="footer-navigation-link" href="#"><span class="opacity-text-nav">Каталог</span></a>
           </li>
           <li class="footer-navigation-list-item">
-            <a class="footer-navigation-link" href="#">Доставка</a>
+            <a class="footer-navigation-link" href="#"><span class="opacity-text-nav">Доставка</span></a>
           </li>
           <li class="footer-navigation-list-item">
-            <a class="footer-navigation-link" href="#">Контакты</a>
+            <a class="footer-navigation-link" href="#"><span class="opacity-text-nav">Контакты</span></a>
           </li>
         </ul>
       </nav>
     <section class="main-footer-info-block">
-      <div class="footer-info">
-        <p class="footer-info-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <span class="contacts-footer-number">+7(812)555-05-55</span>
-      </div>
+        <p class="footer-info-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7(812)555-05-55</p>
       <nav class="footer-navigation-gold-text">
-        <ul class="footer-navigation-list">
-          <li class="footer-navigation-list-item">
-            <a class="footer-navigation-link gold-text" href="#">Материалы</a>
+        <ul class="footer-navigation-list parth-two">
+          <li class="footer-navigation-list-item ">
+            <a class="footer-navigation-link gold-text" href="#"><span class="opacity-text-nav">Материалы</span></a>
           </li>
           <li class="footer-navigation-list-item">
-            <a class="footer-navigation-link gold-text" href="#">Техника</a>
+            <a class="footer-navigation-link gold-text" href="#"><span class="opacity-text-nav">Техника</span></a>
           </li>
           <li class="footer-navigation-list-item">
-            <a class="footer-navigation-link gold-text" href="#">Инструмент</a>
+            <a class="footer-navigation-link gold-text" href="#"><span class="opacity-text-nav">Инструмент</span></a>
           </li>
           <li class="footer-navigation-list-item">
-            <a class="footer-navigation-link gold-text" href="#">Спецпредложения</a>
+            <a class="footer-navigation-link gold-text" href="#"><span class="opacity-text-nav">Спецпредложения</span></a>
           </li>
         </ul>
       </nav>
     </section>
     </div>
+  </div>
       <!-- COPYRIGHT BLOCK -->
+      <div class="copyright-back">
+    <div class="margin-cont">
     <section class="page-copyright">
-      <div class="page-copyright-text-block">
       <p class="page-copyright-text">
         ©2010-2017 Компания "Техномарт"
         Все права защищены
       </p>
-    </div>
-    <nav class="social-navigation">
       <ul class="social-list">
         <li class="social-item">
-          <a class="social-link social-link-vk" href="#">Вконтакте</a>
+          <a class="social-link social-link-vk" href="#">
+            <span class="visualli-hidden">Вконтакте</span></a>
         </li>
         <li class="social-item">
-          <a class="social-link social-link-fb" href="#">Фейсбук</a>
+          <a class="social-link social-link-fb" href="#"><span class="visualli-hidden">Фейсбук</span></a>
             </li>
         <li class="social-item">
-          <a class="social-link social-link-insta" href="#">Инстаграм</a>
+          <a class="social-link social-link-insta" href="#"><span class="visualli-hidden">Инстаграм</span></a>
         </li>
       </ul>
-    </nav>
-    <div class="feedback-block">
       <p class="footer-feedback">
-        Обратная связь:
-        <span class="gold-text">mail@htmlacademy.ru</span>
+        Обратная связь:<br>
+        <span class="gold-text red-text">mail@htmlacademy.ru</span>
       </p>
-    </div>
-    <div class="developer-block">
       <p class="page-developer">
         Разработано -
-        <span class="gold-text">
-          <a class="intensive-button" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </span>
+          <a class="intensive-button gold-text red-text" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>
-    </div>
     </section>
+  </div>
+ </div>
     </footer>
   </body>
   </html>
