@@ -1829,15 +1829,18 @@ color: #fff;
   background-color: #fff;
   border-top: 7px solid #ff5357;
   box-sizing: border-box;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-bottom: 37px;
-  padding-top: 50px;
+  padding-top: 15px;
   transform: translate(-50%, -50%);
   z-index: 21;
+  box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.4);
 
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+
   display: none;
 }
 
@@ -1858,15 +1861,43 @@ color: #fff;
   color: #000;
 }
 
+.name-form{
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #fff;
+  border: none;
+  border: 1px solid #dee3e4;
+  padding: 10px 60px 10px 15px;
+}
+
+.modal-textarea{
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #fff;
+  border: none;
+  border: 1px solid #dee3e4;
+  padding: 15px;
+
+  width: 467px;
+}
+
+.one-form{
+  margin-left: auto;
+}
+
 .modal-page-button{
   font-size: 14px;
   line-height: 18px;
   color: #fff;
   text-align: center;
+  border: none;
   background-color: #ff5357;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: 40px;
 }
 
 .modal-page-button:hover{
@@ -1877,24 +1908,24 @@ color: #fff;
   background-color: #ba2732;
 }
 
-.modal-close::before{
+.modal-close::before,
+.modal-close::after{
   position: absolute;
-  width: 30px;
-  height: 3px;
-  background-color: #ff5357;
+  content: "";
+  width: 25px;
+  height: 4px;
+  border-radius: 3px;
+  background-color: #ee3643;
+  top: 0px;
+  right: -56px;
+}
 
-  top: 25px;
-  right: 9px;
+.modal-close::before{
+  transform: rotate(45deg);
 }
 
 .modal-close::after{
-  position: absolute;
-  width: 30px;
-  height: 3px;
-  background-color: #ff5357;
-
-  top: 25px;
-  right: 9px;
+  transform: rotate(-45deg);
 }
 
 .buy-modal-page{
@@ -1908,6 +1939,7 @@ color: #fff;
   border-top: 7px solid #ff5357;
   transform: translate(-50%, -50%);
   z-index: 21;
+  box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.4);
 
   display: none;
 }
@@ -1977,4 +2009,24 @@ color: #fff;
 
 .modal-price-link:active{
   color: rgba(0, 0, 0, 0.3);
+}
+
+.link-modal-exit::before,
+.link-modal-exit::after{
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 4px;
+  border-radius: 3px;
+  background-color: #ee3643;
+  top: 13px;
+  right: 5px;
+}
+
+.link-modal-exit::before{
+  transform: rotate(45deg);
+}
+
+.link-modal-exit::after{
+  transform: rotate(-45deg);
 }
