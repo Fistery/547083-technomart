@@ -15,12 +15,6 @@ var sliderLinkTwo = document.querySelector(".slide-button-two");
 var sliderTwo = document.querySelector(".two-slide");
 var sladerRight = document.querySelector(".main-slader-left-link");
 var sliderLeft = document.querySelector(".main-slider-right-link");
-var deliverySlide = document.querySelector(".delivery-button");
-var deliveryBlock = document.querySelector(".services-car");
-var guaranteeSlide = document.querySelector(".guarantee-button");
-var guaranteeBlock = document.querySelector(".servise-guarantee");
-var creditsSlide = document.querySelector(".credits-button");
-var creditsBlock = document.querySelector(".services-credit");
 
 sladerRight.addEventListener("click", function (evt){
   evt.preventDefault();
