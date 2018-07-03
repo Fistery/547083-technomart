@@ -17,9 +17,9 @@ var sladerRight = document.querySelector(".main-slader-left-link");
 var sliderLeft = document.querySelector(".main-slider-right-link");
 
 for (let i = 0; i < buyup.length; i++) {
-buyup[i].addEventListener("click", function (evt) {
-evt.preventDefault();
-buypage.classList.add("modal-up");
+  buyup[i].addEventListener("click", function (evt) {
+  evt.preventDefault();
+  buypage.classList.add("modal-up");
 });
 }
 

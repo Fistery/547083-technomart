@@ -458,8 +458,6 @@ color: #fff;
   margin-left: 3px;
 }
 
-
-
 .user-modal-link:hover{
   color: #ee3643;
 }
@@ -1907,7 +1905,7 @@ color: #fff;
   padding-left: 25px;
 }
 
-.breadcrumbs-list-item::before{
+.icon-right::before{
   position: absolute;
   content: url(../img/icon-right-small.png);
   top: 0px;
@@ -2007,6 +2005,13 @@ color: #fff;
 .active-underline-text{
   color: #ee3643;
   border-bottom: none;
+}
+
+.grey-line{
+  border: none;
+  color: #eaeaea;
+  background-color: #eaeaea;
+  height: 1px;
 }
 
 .bold-name-form{
