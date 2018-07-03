@@ -640,8 +640,8 @@ color: #fff;
 .additional-image::before{
   position:absolute;
   content: url("../img/new-flag.png");
-  top: 0px;
-  right: 0px;
+  top: -1px;
+  right: -1px;
 
   z-index: 20;
 }
@@ -1096,7 +1096,7 @@ color: #fff;
   background-color: rgba(255, 255, 255, 0.9);
 
   width: 210px;
-  height: 150px;
+  min-height: 150px;
 
   z-index: 10;
 
@@ -1283,7 +1283,7 @@ color: #fff;
   height: 100%;
 
   padding-bottom: 7px;
-  padding-left: 8px;
+  padding-left: 4px;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1379,11 +1379,12 @@ color: #fff;
   color: #000000;
 
   margin: 0px;
-  margin-top: 22px;
+  margin-top: 19px;
 }
 
 .delivery-text{
   max-width: 278px;
+  margin-top: 23px
 }
 
 .services-car:after{
@@ -1454,7 +1455,7 @@ color: #fff;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 85px;
+  padding-bottom: 86px;
 }
 
 .company-info-bold-text{
@@ -1473,7 +1474,7 @@ color: #fff;
   width: 526px;
 
   margin: 0;
-  margin-top: 26px;
+  margin-top: 24px;
 }
 
 .company-info-text-two{
@@ -1770,7 +1771,7 @@ color: #fff;
 
   width: 299px;
 
-  margin-top: 16px;
+  margin-top: 23px;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1785,8 +1786,8 @@ color: #fff;
 
   padding-left: 47px;
   padding-right: 25px;
-  padding-top: 15px;
-  padding-bottom: 8px;
+  padding-top: 11px;
+  padding-bottom: 10px;
 
   margin: 0px;
 }
@@ -1799,7 +1800,7 @@ color: #fff;
   position: absolute;
   content: url("../img/icon-user.svg");
   opacity: 0.3;
-  top: 16px;
+  top: 11px;
   left: 12px;
 }
 
@@ -1811,7 +1812,7 @@ color: #fff;
   position: absolute;
   content: url("../img/icon-logout.svg");
   opacity: 0.3;
-  top: 17px;
+  top: 12px;
   right: -31px;
 }
 
@@ -1868,6 +1869,10 @@ color: #fff;
   opacity: 0.3;
 }
 
+.breadcrumbs-site-navigation{
+  margin-bottom: 3px;
+}
+
 .breadcrumbs-list{
   margin: 0px;
   padding: 0px;
@@ -1919,7 +1924,7 @@ color: #fff;
 
 .info-block-catalog{
   padding-top: 60px;
-  padding-bottom: 65px;
+  padding-bottom: 68px;
 }
 
 .catalog-text-bold{
@@ -1929,7 +1934,7 @@ color: #fff;
   text-transform: uppercase;
 
   padding-top: 4px;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 
   margin: 0px;
 }
@@ -2013,7 +2018,9 @@ color: #fff;
   text-transform: uppercase;
 
   margin: 0px;
-  margin-top: 13px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  padding-top: 2px;
 }
 
 .focus-input:focus{
@@ -2023,7 +2030,7 @@ color: #fff;
 }
 
 .range{
-  margin-top: 14px;
+  margin-top: 13px;
 }
 
 .range-controls {
@@ -2036,7 +2043,7 @@ color: #fff;
   width: 160px;
   height: 80px;
 
-  margin: 0 0 10px;
+  margin: 0 0 9px;
   padding: 0 30px;
 }
 
@@ -2090,7 +2097,7 @@ color: #fff;
 	border: none;
 	border-radius: 3px;
 
-  padding: 6px 7px 14px 8px;
+  padding: 9px 7px 12px 8px;
   margin: 0;
 }
 
@@ -2105,11 +2112,15 @@ color: #fff;
 }
 
 .checkbox-container{
-  padding: 7px 30px 8px 30px;
+  padding: 7px 30px 9px 30px;
 }
 
 .checkbox-container-radio{
   padding: 14px 25px 0px 34px;
+}
+
+.checkbox-container-radio-one{
+  padding: 7px 25px 2px 34px;
 }
 
 
@@ -2158,7 +2169,7 @@ color: #fff;
 }
 
 .radio-filter{
-  margin-bottom: 77px;
+  margin-bottom: 76px;
 }
 
 .radio-input:disabled ~ .radio-label-text:before{
@@ -2358,7 +2369,7 @@ color: #fff;
   padding: 0px;
 
   margin: 0px;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 .catalog-flex-block{
@@ -2445,8 +2456,8 @@ color: #fff;
 }
 
 .check-box-filters{
-  margin-top: 8px;
-  margin-bottom: 17px;
+  margin-top: 6px;
+  margin-bottom: 13px;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2642,7 +2653,7 @@ color: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-top: 7px solid #ff5357;
-  z-index: 21;
+  z-index: 66;
   -webkit-box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.4);
           box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.4);
 }

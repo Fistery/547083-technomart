@@ -16,6 +16,23 @@ var sliderTwo = document.querySelector(".two-slide");
 var sladerRight = document.querySelector(".main-slader-left-link");
 var sliderLeft = document.querySelector(".main-slider-right-link");
 
+for (let i = 0; i < buyup.length; i++) {
+buyup[i].addEventListener("click", function (evt) {
+evt.preventDefault();
+buypage.classList.add("modal-up");
+});
+}
+
+buyClose.addEventListener("click", function (evt){
+  evt.preventDefault();
+buypage.classList.remove("modal-up");
+})
+
+priceClose.addEventListener("click", function (evt){
+  evt.preventDefault();
+buypage.classList.remove("modal-up");
+})
+
 sladerRight.addEventListener("click", function (evt){
   evt.preventDefault();
   sliderOne.classList.toggle("slide-display");
