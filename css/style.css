@@ -369,12 +369,12 @@ color: #fff;
 
   width: 247px;
 
-  padding-top: 15px;
-  padding-bottom: 9px;
-  padding-left: 20px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 18px;
 
   margin: 0px;
-  margin-top: 3px;
+  margin-top: 8px;
 }
 
 .header-contacts-number-catalog{
@@ -387,19 +387,19 @@ color: #fff;
 
   width: 247px;
 
-  padding-top: 12px;
-  padding-bottom: 11px;
-  padding-left: 20px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 19px;
 
   margin: 0px;
   margin-top: 8px;
-  margin-left: 10px;
+  margin-left: 13px;
 }
 
 .header-contacts-number::before{
   position: absolute;
   content: url("../img/icon-phone.svg");
-  top: 16px;
+  top: 11px;
   left: 11px;
 }
 
@@ -419,7 +419,7 @@ color: #fff;
   line-height: 24px;
   color: #32425c;
 
-  padding-left: 21px;
+  padding-left: 23px;
 
   margin: 0px;
   margin-top: 3px;
@@ -437,7 +437,7 @@ color: #fff;
   color: #000000;
   background-color: #ffffff;
 
-  padding-left: 48px;
+  padding-left: 45px;
   padding-right: 28px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -455,7 +455,7 @@ color: #fff;
   padding-top: 12px;
   padding-bottom: 12px;
 
-  margin-left: 3px;
+  margin-left: 6px;
 }
 
 .user-modal-link:hover{
@@ -2023,8 +2023,36 @@ color: #fff;
   text-transform: uppercase;
 
   margin: 0px;
-  margin-top: 10px;
+  margin-top: 9px;
   margin-bottom: 7px;
+  padding-top: 2px;
+}
+
+.bold-name-form-two{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+
+  margin: 0px;
+  margin-top: 13px;
+  margin-bottom: 6px;
+  padding-top: 2px;
+}
+
+.bold-name-form-three{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+
+  margin: 0px;
+  margin-top: 12px;
+  margin-bottom: 6px;
   padding-top: 2px;
 }
 
@@ -2158,7 +2186,7 @@ color: #fff;
   cursor: pointer;
 }
 
-.checkbox-input:checked + .label-text:before{
+.checkbox-input:checked + .label-text::before{
   position: absolute;
   content: url(../img/checkbox-on.png);
   top: -2px;;
@@ -2169,20 +2197,30 @@ color: #fff;
   opacity: 0.3;
 }
 
-.checkbox-input:disabled ~ .label-text:before{
+.checkbox-input:disabled ~ .label-text::before{
   opacity: 0.3;
+}
+
+.checkbox-input:focus ~ .label-text::before{
+  outline: 2px solid #7BB6FA;
+  padding-right: 120px;
 }
 
 .radio-filter{
   margin-bottom: 76px;
 }
 
-.radio-input:disabled ~ .radio-label-text:before{
+.radio-input:disabled ~ .radio-label-text::before{
   opacity: 0.3;
 }
 
 .radio-input:disabled ~ .radio-label-text{
   opacity: 0.3;
+}
+
+.radio-input:focus ~ .radio-label-text::before{
+  border: 2px solid #7BB6FA;
+  padding-right: 160px;
 }
 
 .radio-label-text{
@@ -2194,7 +2232,7 @@ color: #fff;
   text-transform: uppercase;
 }
 
-.radio-label-text:before{
+.radio-label-text::before{
   position: absolute;
   content: url(../img/radio-off.png);
   top: -2px;;
@@ -2202,7 +2240,7 @@ color: #fff;
   opacity: 0.5;
 }
 
-.radio-input:checked + .radio-label-text:before{
+.radio-input:checked + .radio-label-text::before{
   position: absolute;
   content: url(../img/radio-on.png);
   top: -2px;;
@@ -2648,6 +2686,46 @@ color: #fff;
           transform: rotate(-45deg);
 }
 
+.popup-map{
+  position: fixed;
+  background-color: #eeeae3;
+  top: 250px;
+  left: 480px;
+
+  min-width: 230px;
+  min-height: 450px;
+
+  -webkit-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+
+  border: none;
+  z-index: 66;
+}
+
+.link-modal-exit-popup::before,
+.link-modal-exit-popup::after{
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 4px;
+  border-radius: 3px;
+  background-color: #ee3643;
+  top: 21px;
+  right: 14px;
+}
+
+.link-modal-exit-popup::before{
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.link-modal-exit-popup::after{
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .buy-modal-page{
   position: fixed;
   background-color: #fff;
@@ -2691,7 +2769,7 @@ color: #fff;
 
 }
 
-.buy-modal-text:before{
+.buy-modal-text::before{
   position: absolute;
   content: url(../img/form-1.png);
   top: 45px;
