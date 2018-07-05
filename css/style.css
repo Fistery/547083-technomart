@@ -2230,7 +2230,7 @@ img{
 }
 
 .price-max {
-	margin-left: 4px;
+	margin-left: 6px;
 }
 
 .checkbox-container{
@@ -2938,4 +2938,4 @@ img{
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-} 
+}
