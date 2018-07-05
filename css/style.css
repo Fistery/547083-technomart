@@ -725,8 +725,8 @@ img{
 }
 
 .additional-image::before{
-  position:absolute;
-  content: url("../img/new-flag.png");
+  position: absolute;
+  content: url(../img/new-flag.png);
   top: -1px;
   right: -1px;
 
@@ -735,36 +735,36 @@ img{
 
 
 .material-icon::after{
-  position:absolute;
-  content: url("../img/icon-materials.svg");
+  position: absolute;
+  content: url(../img/icon-materials.svg);
   top: 30px;
   right: 43px;
 }
 
 .instrument-icon::after{
-  position:absolute;
-  content: url("../img/icon-tool.svg");
+  position: absolute;
+  content: url(../img/icon-tool.svg);
   top: 30px;
   right: 28px;
 }
 
 .technology-icon::after{
-  position:absolute;
-  content: url("../img/icon-technology.svg");
+  position: absolute;
+  content: url(../img/icon-technology.svg);
   top: 30px;
   right: 30px;
 }
 
 .discount-icon::after{
-  position:absolute;
-  content: url("../img/icon-discount.svg");
+  position: absolute;
+  content: url(../img/icon-discount.svg);
   top: 25px;
   right: 45px;
 }
 
 .delivery-icon::after{
-  position:absolute;
-  content: url("../img/icon-delivery.svg");
+  position: absolute;
+  content: url(../img/icon-delivery.svg);
   top: 32px;
   right: 30px;
 }
@@ -1475,7 +1475,7 @@ img{
 }
 
 .services-car:after{
-  content: url("../img/delivery.png");
+  content: url(../img/delivery.png);
   position: absolute;
   right: -340px;
   bottom: -8px;
@@ -1497,7 +1497,7 @@ img{
 
 .services-credit::after{
   position: absolute;
-  content: url("../img/credit.png");
+  content: url(../img/credit.png);
   right: -350px;
   bottom: 0px;
 }
@@ -1885,7 +1885,7 @@ img{
 
 .user-name::before{
   position: absolute;
-  content: url("../img/icon-user.svg");
+  content: url(../img/icon-user.svg);
   opacity: 0.3;
   top: 11px;
   left: 12px;
@@ -1897,24 +1897,24 @@ img{
 
 .login-out::after{
   position: absolute;
-  content: url("../img/icon-logout.svg");
+  content: url(../img/icon-logout.svg);
   opacity: 0.3;
   top: 12px;
   right: -31px;
 }
 
 .user-name:hover::before{
-  content: url("../img/icon-user.svg");
+  content: url(../img/icon-user.svg);
   opacity: 1;
 }
 
 .login-out:hover::after{
-  content: url("../img/icon-logout.svg");
+  content: url(../img/icon-logout.svg);
   opacity: 1;
 }
 
 .login-out:active::after{
-  content: url("../img/icon-logout.svg");
+  content: url(../img/icon-logout.svg);
   opacity: 0.3;
 }
 
@@ -2002,7 +2002,7 @@ img{
 }
 
 .img-link:before{
-  content: url("../img/icon-home.svg")
+  content: url(../img/icon-home.svg)
 }
 
 .info-catalog-back{
@@ -2399,7 +2399,7 @@ img{
 
 .servise-guarantee::after{
   position: absolute;
-  content: url("../img/guarantee.png");
+  content: url(../img/guarantee.png);
   right: -250px;
   bottom: 0px;
 }
