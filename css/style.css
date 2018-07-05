@@ -1,3 +1,87 @@
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/Cuprum.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprum.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprumbold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprumbold.woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprumitalic.woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprumitalic.woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprumbolditalick.woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprumbolditalick.woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
 body{
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 13px;
@@ -18,7 +102,7 @@ body{
 
 .visualli-hidden{
   position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   padding:0 !important;
   border:0 !important;
@@ -169,14 +253,6 @@ img{
   color: #000;
 }
 
-.input[type="search"]::-webkit-input-placeholder {
-color: #fff;
-}
-
-.input[type="search"]::-moz-placeholder {
-color: #fff;
-}
-
 .user-navigation-list{
   padding: 0px;
 
@@ -263,15 +339,15 @@ color: #fff;
   position: absolute;
   fill: #fff;
   opacity: 0.3;
-  top: 0px;
-  left: -31px;
+  top: 12px;
+  left: 17px;
 }
 
 .main-search:hover .icon-search-svg{
   opacity: 1;
 }
 
-.main-search-input:focus + .icon-search-svg{
+.main-search-input:focus ~ .icon-search-svg{
   fill: #ee3643;
   opacity: 1;
 }
