@@ -14,9 +14,9 @@
       <div class="margin-cont">
       <nav class="user-navigation">
       <h2 class="header-text-logo"><a class="header-text-logo-button">Техномарт</a></h2>
-      <form class="main-search" action="#">
-        <label class="label-main-search" for="main-search">
-        <input class="main-search-input" type="search" name="main-search" id="main-search" placeholder="Поиск:">
+      <form class="main-search" action="#" method="get">
+        <input class="main-search-input" type="search" name="main-search" id="main-search" placeholder=" ">
+        <label class="search-label" for="main-search">Поиск:
         <svg class="icon-search-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px"
            height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
         <g id="Layer_1">
@@ -211,7 +211,7 @@
             <a class="brands-block-item-link" href="#"><img width="169" height="31" src="img/Hitachi.png" alt="HITACHI"><p class="visualli-hidden">Производитель инструмента HITACHI</p></a>
           </div>
           <div class="brands-block-item">
-            <a class="brands-block-item-link" href="#"><img width="121" height="73" src="img/LG.png" alt="LG"><p class="visualli-hidden">Производитель инструмента LG</a>
+            <a class="brands-block-item-link" href="#"><img width="121" height="73" src="img/LG.png" alt="LG"><p class="visualli-hidden">Производитель инструмента LG</p></a>
           </div>
           <div class="brands-block-item">
             <a class="brands-block-item-link" href="#"><img width="151" height="96" src="img/AEG.png" alt="AEG Power Solution"><p class="visualli-hidden">Производитель инструмента AEG Power Solution</p></a>
@@ -289,13 +289,12 @@
         </div>
       </section>
       </div>
-    </div>
     </main>
     <footer class="page-footer">
       <div class="footer-contaner">
       <div class="margin-cont">
       <nav class="footer-navigation">
-        <h2 class="header-text-logo footer-logo"><a class="header-text-logo-button">Техномарт</span></a></h2>
+        <h2 class="header-text-logo footer-logo"><a class="header-text-logo-button">Техномарт</a></h2>
         <ul class="footer-navigation-list">
           <li class="footer-navigation-list-item">
             <a class="footer-navigation-link" href="#"><span class="opacity-text-nav">Компания</span></a>
@@ -315,7 +314,8 @@
         </ul>
       </nav>
     <section class="main-footer-info-block">
-        <p class="footer-info-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+      <h2 class="visualli-hidden">Информация о нас</h2>
+        <p class="footer-info-text">г.&nbsp;Санкт-Петербург,&nbsp;ул.&nbsp;Б.&nbsp;Конюшенная,&nbsp;д.&nbsp;19/8 <br>
           <span class="footer-info-text number-footer-text">+7(812)555-05-55</span></p>
       <nav class="footer-navigation-gold-text">
         <ul class="footer-navigation-list parth-two">
@@ -339,8 +339,9 @@
       <div class="copyright-back">
     <div class="margin-cont">
     <section class="page-copyright">
+      <h2 class="visualli-hidden">Авторские права и наши социальные сети</h2>
       <p class="page-copyright-text">
-        © 2010-2017 Компания «Техномарт»
+        ©&nbsp;2010-2017&nbsp;Компания&nbsp;«Техномарт»
         Все права защищены
       </p>
       <ul class="social-list">
@@ -360,39 +361,33 @@
         <a class="gold-text red-text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </p>
       <p class="page-developer">
-        Разработано &nbsp;-
+        Разработано&nbsp;-
           <a class="intensive-button gold-text red-text" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>
     </section>
   </div>
  </div>
     </footer>
-    <section class="modal-page-map modal-none">
+    <div class="modal-page-map modal-none">
       <form class="modal-map-page-form">
-        <div class="your-name-form">
-        <label>
-        <h5 class="modal-page-bold-text">Ваше имя:</h5>
-        <input class="name-form focus-input name-form" type="text" name="your-name" placeholder="Имя Фамилия">
-        </label>
+        <div class="your-name-form margin-modal-map">
+        <label class="modal-page-bold-text" for="your-name">Ваше имя:</label><br>
+        <input class="name-form focus-input" type="text" name="your-name" id="your-name" placeholder="Имя Фамилия">
             </div>
-    <div class="your-email-block">
-        <label>
-        <h5 class="modal-page-bold-text">Ваш e-mail:</h5>
-        <input class="name-form one-form focus-input" type="text" name="email" placeholder="Email@example.com">
-        </label>
+    <div class="your-email-block margin-modal-map">
+        <label class="modal-page-bold-text" for="email">Ваш e-mail:</label><br>
+        <input class="name-form one-form focus-input" type="text" name="email" id="email" placeholder="Email@example.com">
     </div>
     <div class="text-form">
-      <label>
-      <h5 class="modal-page-bold-text">Текст письма:</h5>
-      <textarea class="modal-textarea focus-input" name="textarea" rows="4" cols="64" placeholder="В свободной форме"></textarea>
-      </label>
+      <label class="modal-page-bold-text" for="textarea">Текст письма:</label><br>
+      <textarea class="modal-textarea focus-input" name="textarea" id="textarea" rows="4" cols="64" placeholder="В свободной форме"></textarea>
     </div>
       <a class="modal-close" href="#"><span class="visualli-hidden">Закрыть</span></a>
-      <button class="modal-page-button" type="submit" name="modal-page-button">Отправить</a>
+      <button class="modal-page-button" type="submit" name="modal-page-button">Отправить</button>
     </form>
-    </section>
+  </div>
     <div class="popup-map modal-none">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124045!2d30.320894616185566!3d59.93879686904781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1530721266628" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124045!2d30.320894616185566!3d59.93879686904781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1530721266628" width="940" height="450" style="border:0" allowfullscreen></iframe>
       <a class="link-modal-exit-popup" href="#"><span class="visualli-hidden">Выход</span></a>
     </div>
     <div class="buy-modal-page modal-none">

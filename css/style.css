@@ -136,6 +136,20 @@ img{
   height: 100%;
 }
 
+.search-label{
+  position: absolute;
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  top: 12px;
+  left: 48px;
+  transform: translateY (-50%);
+}
+
+.main-search-input:focus ~ .search-label{
+  top: -30px;
+}
+
 .main-search-input{
   font-size: 17px;
   line-height: 18px;
@@ -249,8 +263,8 @@ color: #fff;
   position: absolute;
   fill: #fff;
   opacity: 0.3;
-  top: 11px;
-  left: 17px;
+  top: 0px;
+  left: -31px;
 }
 
 .main-search:hover .icon-search-svg{
@@ -2613,6 +2627,10 @@ color: #fff;
   color: #000;
 }
 
+.margin-modal-map{
+  margin-top: 25px;
+}
+
 .name-form{
   font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
@@ -2622,6 +2640,7 @@ color: #fff;
   border: 1px solid #dee3e4;
 
   padding: 10px 60px 10px 15px;
+  margin-bottom: 50px;
 }
 
 .modal-textarea{
@@ -2651,7 +2670,7 @@ color: #fff;
 
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .modal-page-button:hover{
